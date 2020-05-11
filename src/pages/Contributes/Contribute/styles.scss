@@ -1,0 +1,344 @@
+.page{
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.pageBody{
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    margin: 0 15px 15px 15px;
+    border-radius: 4px;
+    .pageWrap{
+        flex: 1 1;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        margin-left: 0px;
+    }
+}
+
+.pageMain{
+    flex: 1 1;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    .pageScroll{
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        position: absolute;
+    }
+}
+.formItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px 10px;
+    color: rgba(0,0,0,0.65);
+    margin-bottom: 30px;
+    label{
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+    input{
+        flex: 1 1;
+        border: none;
+        outline: none;
+    }
+}
+.btnGroup{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    button{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.entityTitle{
+    padding: 10px 30px 10px 30px;
+    border-bottom: 1px dotted #ccc;
+    h4{
+        font-size: 24px;
+        font-weight: 600;
+        color: rgba(0,0,0,0.85);
+        margin-bottom: 15px;
+    }
+    p{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        flex-wrap: wrap;
+        span{
+            margin-right: 30px;
+            color: rgba(0,0,0,0.65);
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+.yanjing,
+.bianji,
+.delete,
+.gengduo {
+    text-align: center;
+    line-height: 28px;
+    margin: 0 5px;
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+}
+
+.yanjing {
+    background: #55dcb3;
+}
+
+.bianji {
+    background: #57d7f0;
+}
+
+.delete {
+    background: #fb9183;
+}
+
+.gengduo {
+    background: #55dcb3;
+}
+.entityErr{
+    padding: 20px;
+    text-align: center;
+    color: rgba(0,0,0,0.45);
+    .msg{
+        padding: 10px 0;
+    }
+    .opts{
+        >span{
+            color: #1890ff;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        >a{
+            margin-left: 10px;
+        }
+    }
+}
+.replyWrap{
+    margin-top: 10px;
+    background: #f6f6f6;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+.replyBtnWrap{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px 0;
+}
+.replyRight{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    .content{
+        margin-right: 10px;
+    }
+    .user{
+        text-align: right;
+        padding-bottom: 6px;
+        span{
+            padding-left: 15px;
+        }
+    }
+    .descri{
+        text-align: right;
+    }
+}
+.replyLeft{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    .user{
+        padding-bottom: 6px;
+        span{
+            padding-right: 15px;
+        }
+    }
+    .descri{
+        text-align: left;
+    }
+    .content{
+        margin-left: 10px;
+    }
+}
+.fxRight{
+    display: flex;
+    flex-direction: row-reverse;
+    // align-items: center;
+    padding: 10px 0;
+    .fx1{
+        flex: 1 1;
+        padding-right: 20px;
+    }
+}
+.err{
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0,0,0,0.45);
+    >div{
+        padding: 10px;
+    }
+}
+
+.fullWrap{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.fullPage{
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    overflow: hidden;
+}
+.fullPageBd{
+    flex: 1 1;
+    margin: 0 15px 15px 15px;
+    padding: 15px;
+    background: #fff;
+}
+.scroll{
+    overflow: auto;
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+}
+.textHd{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.textHdBox{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    &:first-child{
+        margin-left: 0;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+    .select{
+        width: 300px;
+        >div{
+            border-radius: 0;
+            border: none;
+            &:focus{
+                box-shadow: none;
+            }
+            >div{
+                margin-left: 0;
+                margin-right: 0;
+            }
+            >span{
+                right: 0;
+            }
+        }
+    }
+}
+.texttl{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    input{
+        flex: 1 1;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        line-height: 24px;
+        padding-bottom: 8px;
+    }
+    >span{
+        width: 88px;
+        text-align: right;
+        color: #ccc;
+        padding-bottom: 8px;
+    }
+}
+.btnGroup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+    >button{
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 140px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+}
+.entityContent{
+    padding: 10px 30px;
+}
+.pageNav{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f2f4;
+    flex-wrap: wrap;
+    button{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    >input{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+    >span{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 240px;
+    }
+}
+.scorll{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.onLine{
+    white-space: nowrap;
+}

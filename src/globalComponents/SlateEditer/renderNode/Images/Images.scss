@@ -1,0 +1,30 @@
+.img,
+.imgFocused {
+    // display: block;
+    // margin: 0 auto;
+    border: 2px solid transparent;
+}
+
+.imgFocused {
+    border: 2px solid blue;
+}
+
+.ipts {
+    position: absolute;
+    left: 2px;
+    bottom: 0;
+    width: 200px;
+    border-right: 1px solid #fff;
+}
+
+.ipt {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0 5px;
+    border-top: 1px solid #fff;
+}

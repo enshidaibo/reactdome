@@ -1,0 +1,11 @@
+.ipt {
+    display: block;
+    border: none;
+    width: 100%;
+    flex: 1;
+    font-size: 16px;
+    &:disabled {
+        background-color: #f5f5f5;
+        color: #aca899;
+    }
+}

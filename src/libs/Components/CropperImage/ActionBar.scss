@@ -1,0 +1,42 @@
+.actionBar {
+    font-size: 16px;
+    height: 50px;
+    min-height: 50px;
+    line-height: 50px;
+    background: #ffff; // color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 26px;
+    cursor: pointer;
+    &:hover {
+        color: #40a9ff;
+    }
+}
+
+.btns {
+    display: inline-block;
+}
+
+.btn {
+    margin: 0;
+}
+
+.btnActive {
+    background: #40a9ff;
+    border-color: #40a9ff;
+}
+
+.icon {
+    font-size: 16px;
+    line-height: 16px;
+}

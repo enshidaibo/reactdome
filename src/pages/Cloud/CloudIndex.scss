@@ -1,0 +1,19 @@
+.aticleIndex {
+  height: auto;
+  overflow: hidden; // background-color: #ffffff;
+}
+
+.aticleList {
+  display: flex;
+  height: auto;
+}
+
+.content {
+  flex: 1;
+  padding: 25px;
+  width: 80%;
+  float: left;
+  background: #fff;
+  text-align: center;
+  min-height: 750px;
+}

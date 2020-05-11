@@ -1,0 +1,66 @@
+.thumbBtn{
+    width: 86px;
+    height: 86px;
+    border: 1px dotted #ddd;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        margin-left: -12px;
+        margin-top: -1px;
+        background: #ccc;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 24px;
+        top: 50%;
+        margin-top: -12px;
+        left: 50%;
+        margin-left: -1px;
+        background: #ccc;
+    }
+}
+.imgBtn{
+    width: 86px;
+    height: 86px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    position: relative;
+    &:hover{
+        .delWrap{
+            z-index: 100;
+        }
+    }
+    .delWrap{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.35);
+        z-index: -1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+   .delIcon{
+       font-size: 26px;
+       color: #fff;
+       cursor: pointer;
+   }
+}

@@ -1,0 +1,41 @@
+.hd{
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.panelWrap{
+    border: 1px solid #f2f2f2;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    min-width: 200px;
+    align-items: center;
+    user-select: none;
+    cursor: default;
+    &:hover{
+        box-shadow:4px 4px 10px #f2f2f2;
+    }
+    .avatar{
+        margin-right: 10px;
+    }
+    .hd3{
+        font-size: 40px;
+        font-weight: 600;
+        margin: 0;
+        line-height: 40px;
+    }
+    .all{
+        color: #f56a00;
+    }
+    .online{
+        color: #00a2ae;
+    }
+    .ptxt{
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0;
+        color: #aaa;
+        padding: 4px 0;
+    }
+}

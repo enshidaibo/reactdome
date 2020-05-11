@@ -1,0 +1,133 @@
+.aticleIndex {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aticleList {
+    display: flex;
+    flex: 1 1;
+}
+
+.content {
+    flex: 1 1;
+    padding: 25px;
+    background: #fff;
+}
+
+.statCard {
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    .statCardHd{
+        padding: 0 0.15rem;
+        background: #f5f5f5;
+        display: flex;
+        border-bottom: 1px solid #e1e1e1;
+        h3{
+            margin-bottom: 0;
+            display: inline-block;
+            padding: 0.08rem 0.20rem 0.08rem 0;
+        }
+        .hdIput{
+            display: flex;
+            white-space: nowrap;
+            align-items: center;
+            justify-content: center;
+            padding: 0 0.1rem;
+            border-left: 1px solid #e1e1e1;
+        }
+        .hditem{
+            display: flex;
+            white-space: nowrap;
+            div{
+                padding: 0 0.1rem;
+                border-right: 1px solid #e1e1e1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                user-select: none;
+                cursor: pointer;
+                &:last-child{
+                    border-right: none;
+                }
+                &:hover{
+                    background: #ebebeb;
+                }
+            }
+            .hdactive{
+                background: #1890ff;
+                color: #fff;
+                margin: -1px 0;
+                &:hover{
+                    background: #1890ff;
+                }
+            }
+        }
+    }
+    .table{
+        width: 100%;
+
+        .item{
+            border-right: 1px solid #e1e1e1;
+            &:last-child{
+                border-right: none;
+            }
+        }
+        .itembox{
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            dl{
+                padding: 0.15rem;
+                margin-bottom: 0;
+            }
+            dt{
+                padding-bottom: 0.06rem;
+                font-size: 0.12rem;
+            }
+            dd{
+                margin-bottom: 0;
+                font-size: 0.12rem;
+                line-height: 18px;
+            }
+            .itemBold{
+                font-size: 0.28rem;
+                font-weight: 600;
+                line-height: 36px;
+            }
+        }
+    }
+}
+
+.statChart{
+    border-bottom: 0.01rem solid #e1e1e1;
+    width: 100%;
+    .statChartHd{
+        border-left: 0.04rem solid #6b6b6b;
+        padding-left: 0.03rem;
+        height: 0.14rem;
+        line-height: 0.14rem;
+        margin: 0.18rem 0.15rem 0;
+    }
+    .statChartBd{
+        width: 100%;
+        padding: 0.15rem;
+    }
+    .echartsCanvas{
+        width: 100%;
+        height: 300px;
+    }
+}
+.noBorderBtm{
+    border-bottom: none;
+}
+
+.errorMsg{
+    padding: 0.1rem;
+    min-height: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,41 @@
+.header {
+    background: #0077db;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    .backbtn {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        height: 36px;
+        line-height: 36px;
+        width: 60px;
+        color: #fff;
+        background: #00a2ed;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+    }
+    .tab,
+    .tabone,
+    .curtab {
+        display: inline-block;
+        color: #fff;
+        font-size: 16px;
+        padding: 0 40px;
+        cursor: pointer;
+        border-right: 1px solid #0077db;
+    }
+    .tab:hover {
+        background: #0062b5;
+    }
+    .curtab {
+        background: #0062b5;
+    }
+}

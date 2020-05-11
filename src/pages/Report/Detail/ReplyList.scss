@@ -1,0 +1,52 @@
+.list {
+    height: auto;
+    min-height: 50px;
+    width: 90%;
+    background-color: #F6F6F6;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    /* Old Firefox */
+}
+
+.reply {
+    color: #88A4B3;
+    padding-left: 10px;
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.time {
+    color: #969896;
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content {
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+
+.btn {
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+    padding-bottom: 10px;
+}
+
+.btn .icon {
+    margin-right: 20px;
+}
+
+.delete {
+    color: #969896;
+}

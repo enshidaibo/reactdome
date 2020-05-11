@@ -1,0 +1,139 @@
+.AtricleLeft {
+    flex: 1;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.left_inline {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    padding: 15px;
+    flex: 1;
+}
+
+.submit {
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.AtricleRight {
+    margin-left: 10px;
+    min-width: 360px;
+    width: 360px;
+    background: #fff;
+    padding: 25px 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.title {
+    margin: 15px 0 0;
+    line-height: 24px;
+}
+
+.textarea {
+    background: #f1f1f1;
+    margin: 15px 0 0;
+}
+
+.input {
+    margin: 0;
+    padding: 4px 0 4px 4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    &:focus {
+        box-shadow: 0 0 0 transparent;
+    }
+}
+
+.time {
+    display: flex;
+    margin: 15px 0 0;
+    .t {
+        margin-right: 10px;
+        min-width: 70px;
+        text-align: right;
+        line-height: 32px;
+        font-size: 14px;
+    }
+    .st {
+        flex: 1;
+        background: #f1f1f1;
+        border-radius: 4px;
+        overflow: hidden;
+        :global(.ant-calendar-picker-input),
+        :global(.ant-select-selection) {
+            background: #f1f1f1;
+            border: none;
+            &:focus {
+                box-shadow: 0 0 0 transparent;
+            }
+        }
+    }
+    .ls {
+        overflow: hidden;
+        width: 100%;
+        :global(.ant-select-selection) {
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid #d9d9d9;
+            &:focus {
+                box-shadow: 0 0 0 transparent; // border-bottom: 1px solid #1890ff;
+            }
+        }
+        :global(.ant-select-selection__rendered),
+        :global(.ant-select-selection__placeholder) {
+            margin-left: 2px;
+        }
+        :global(.ant-select-search__field__placeholder) {
+            left: 4px;
+        }
+    }
+    .showShortTitle {
+        min-width: 92px;
+        margin: 0 0 0 10px;
+    }
+}
+
+.colorPicker {
+    width: 230px;
+    position: relative;
+}
+
+.colorDiv {
+    width: 20px;
+    height: 10px;
+    background: #f00;
+}
+
+.SketchPicker {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 9999;
+}
+
+.lt {
+    display: flex;
+    justify-content: space-between;
+    line-height: 22px;
+    .span {
+        margin-right: 6px;
+    }
+}
+
+.addContentbox {
+    text-align: center;
+    padding: 25px 0 0;
+}
+
+.addContent {
+    height: 110px;
+    width: 170px;
+    border-radius: 10px;
+}

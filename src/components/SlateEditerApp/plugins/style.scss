@@ -1,0 +1,26 @@
+.btn,
+.btn_active {
+    position: relative;
+    display: inline-block;
+    line-height: 28px;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    cursor: pointer;
+
+    :global(.iconfont) {
+        font-size: 18px;
+    }
+}
+
+.btn {
+    color: #999;
+
+    &:hover {
+        color: #3a3a3a;
+    }
+}
+
+.btn_active {
+    color: #000;
+}

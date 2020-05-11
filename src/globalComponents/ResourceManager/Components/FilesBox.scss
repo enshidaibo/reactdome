@@ -1,0 +1,48 @@
+.box,
+.boxselect {
+    border: 3px solid transparent;
+    float: left;
+    min-width: 140px;
+    height: 140px;
+    background: #f4f4f4;
+    margin: 10px;
+    position: relative;
+}
+
+.boxselect {
+    border-color: #267bf0;
+}
+
+.title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.mask {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.editBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0 3px;
+}

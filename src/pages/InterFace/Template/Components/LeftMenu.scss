@@ -1,0 +1,13 @@
+.reflush {
+    margin: 15px;
+}
+
+.menu {
+    :global(.ant-tree-switcher) {
+        display: none !important;
+    }
+
+    :global(.ant-tree-node-content-wrapper) {
+        margin-left: 15px !important;
+    }
+}

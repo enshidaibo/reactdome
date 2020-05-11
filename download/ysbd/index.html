@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <title>云上巴东下载</title>
+</head>
+<script>
+    function changeFontSize() {
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+        // document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.75 + 'px';
+    }
+    changeFontSize()
+    window.onresize = changeFontSize
+</script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .bg {
+        display: block;
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .btns {
+        position: absolute;
+        bottom: 1rem;
+        top: 9.7rem;
+        width: 100%;
+    }
+
+    .anzhuo,
+    .ios {
+        display: block;
+        width: 4.32rem;
+        height: .8rem;
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: .3rem auto;
+    }
+
+    .anzhuo {
+        background-image: url('./images/anzhuo.jpg');
+    }
+
+    .ios {
+        background-image: url('./images/ios.jpg');
+    }
+</style>
+
+<body>
+    <img class="bg" src="./images/bg.jpg" alt="">
+    <div class="btns">
+        <span id="anzhuo" class="anzhuo"></span>
+        <span id="ios" class="ios"></span>
+    </div>
+    <script>
+        var defaultSite = {
+            name: '云上恩施',
+            iosUrl: 'https://itunes.apple.com/cn/app/%E4%BA%91%E4%B8%8A%E6%81%A9%E6%96%BD/id1088514061?mt=8',
+            anzhuoUrl: 'https://a.app.qq.com/o/simple.jsp?pkgname=com.cj.yun.es_bd'
+        }
+        var anzhuo = document.getElementById('anzhuo')
+        var ios = document.getElementById('ios')
+        anzhuo.addEventListener('click', function () {
+            window.location.href = defaultSite.anzhuoUrl
+        })
+        ios.addEventListener('click', function () {
+            window.location.href = defaultSite.iosUrl
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 15px 15px 0;
+}
+
+.icon {
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    &:hover {
+        color: #188ae2;
+    }
+}

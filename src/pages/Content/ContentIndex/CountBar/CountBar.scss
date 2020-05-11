@@ -1,0 +1,39 @@
+.countbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.detail {
+    display: flex;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.icon {
+    margin: 0 5px 0 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #dff9fa;
+    color: #00b4c9;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 6px;
+}
+
+.view {
+    flex: 1;
+    line-height: 20px;
+}
+
+.title {
+    color: #000;
+    font-size: 16px;
+}
+
+.num {
+    color: #3d95b9;
+    font-size: 13px;
+}

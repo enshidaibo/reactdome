@@ -1,0 +1,25 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 0;
+}
+
+.header {
+    display: flex;
+    height: 32px;
+    min-height: 32px;
+    margin: 10px 0;
+}
+
+.btn {
+    margin-left: 10px;
+}
+
+.editor {
+    flex: 1;
+    overflow: hidden;
+
+    :global(.CodeMirror) {
+        height: 100%;
+    }
+}

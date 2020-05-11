@@ -1,0 +1,13 @@
+.aticleList {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content {
+    flex: 1;
+    padding: 25px;
+    background: #fff;
+    height: 100%;
+    overflow-y: auto;
+}

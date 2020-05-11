@@ -1,0 +1,13 @@
+{
+    "name": "Mini PWA",
+    "short_name": "Minimal PWA",
+    "display": "standalone",
+    "start_url": "/text/",
+    "theme_color": "green",
+    "background_color": "#ffffff",
+    "icons": [{
+        "src": "https://imgfile.estv.com.cn/text/app.png",
+        "sizes": "256x256",
+        "type": "image/png"
+    }]
+}

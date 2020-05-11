@@ -1,0 +1,36 @@
+/** 
+ * 左侧
+ **/
+
+.sidebar {
+    background: #00a2ed;
+    width: 200px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    .smenu {
+        flex: 1;
+        overflow-y: auto;
+    }
+    .staball,
+    .stab,
+    .curtab {
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        border-bottom: 1px solid #0096db;
+        &:hover {
+            background: #0077db;
+        }
+    }
+    .curtab {
+        background: #0077db;
+    }
+    .staball {
+        background: #0077db;
+        height: 52px;
+        line-height: 52px;
+    }
+}

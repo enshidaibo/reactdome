@@ -1,0 +1,54 @@
+.login {
+    width: 100%;
+    height: 100%;
+    background: url("./login.jpg") center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top {
+    width: 100%;
+    height: 98px;
+    background: rgba(0, 10, 30, 0.49);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.form {
+    width: 490px;
+    background: #fff;
+    padding: 65px 50px;
+    transform: translateY(-10%);
+    border-radius: 1px;
+}
+
+.btn {
+    width: 100%;
+}
+
+.copyright {
+    height: 62px;
+    line-height: 62px;
+    background: rgba(0, 0, 0, 0.33);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.applogin {
+    text-align: center;
+}
+
+.appqs {
+    color: #fff;
+    line-height: 32px;
+}

@@ -1,0 +1,15 @@
+.iptn,
+.ipt {
+    position: relative;
+}
+
+.ipt {
+    &:after {
+        content: "请输入图片描述";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #888;
+    }
+}

@@ -1,0 +1,9 @@
+.select {
+    border: none;
+    width: 120px;
+    text-align: right;
+    :global(.ant-select-selection) {
+        border: none;
+        box-shadow: none;
+    }
+}

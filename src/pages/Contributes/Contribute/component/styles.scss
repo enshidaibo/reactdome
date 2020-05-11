@@ -1,0 +1,109 @@
+.pageAside{
+    width: 220px;
+    margin: 10px;
+    background: #eff8ff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+.pageAsideHd{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid#c7dfef;
+    padding: 10px 16px;
+    span{
+        flex: 1 1;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    i{
+        cursor: pointer;
+    }
+}
+.pageAsideBd{
+    flex: 1 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .pageAsideBdWrap{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1;
+        .pageAsideScroll{
+            flex: 1 1;
+            overflow: auto;
+        }
+    }
+}
+.pageAsideMenu{
+    width: 220px;
+    .menu{
+        border-right: 0;
+        background: #eff8ff;
+        .menuItem{
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            .menuItemBox{
+                display: flex;
+                flex: 1 1;
+                align-items: center;
+                &:hover{
+                    i{
+                        opacity: 1;
+                        transition: opacity ease 0.3s;
+                    }
+                }
+                span{
+                    flex: 1 1;
+                }
+                i{
+                    opacity: 0;
+                    transition: opacity ease 0.3s;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.pageHd{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    >button{
+        margin-right: 10px;
+        margin-bottom: 12px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+    >a{
+        margin-right: 10px;
+        margin-bottom: 12px;
+    }
+    .rangeDate{
+        width: 240px;
+        margin-right: 10px;
+        margin-bottom: 12px;
+    }
+    .input{
+        width: 200px;
+        margin-right: 10px;
+        margin-bottom: 12px;
+    }
+}
+.menuSpan{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 180px;
+    text-overflow: ellipsis;
+    display: block;
+}

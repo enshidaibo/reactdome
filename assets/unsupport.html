@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="utf-8" />
+    <title>云上视界融媒云-您的浏览器不受支持</title>
+    <style>
+        body {
+            overflow: auto !important;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            text-shadow: none;
+            background: #686868;
+            min-height: 600px;
+            height: 100%;
+            padding-top: 20px;
+            margin: auto;
+            min-width: 705px;
+        }
+
+        .main.error {
+            width: 100%;
+            height: 100%;
+            min-width: 695px;
+            max-height: 1800px;
+            position: absolute;
+            top: -97px;
+            min-height: 600px;
+            right: 0;
+            left: 0;
+        }
+
+        .unavailable-image {
+            background-image: url('/assets/unsupport.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 228px;
+            width: 100%;
+        }
+
+        .wrapper {
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 50;
+        }
+
+        .error .copyright {
+            background-image: url('../../../page_assets/14H40/zh-cn/source/resources/images/Logo.png') center no-repeat;
+            background-size: 16px 20px;
+            min-width: 695px;
+            margin-top: 526px;
+            line-height: 54px;
+            position: absolute;
+            bottom: -65px;
+            right: 0;
+            left: 0;
+            padding-top: 29px;
+            width: 100%;
+            height: 30px;
+            font-size: 12px;
+            letter-spacing: normal;
+            text-align: center;
+            direction: ltr;
+            color: #969696;
+        }
+    </style>
+    <script>
+        var bowser = function () {
+            var userAgent = navigator.userAgent.toLowerCase().split(' ');
+            var flag = userAgent.pop().split('/');
+            if (flag[0] !== 'firefox' && flag[0] !== 'safari') { return false; }
+            return true;
+        }
+        if (bowser()) { window.location.href = '/'; }
+    </script>
+</head>
+
+<body id="ng-app:cloud-module">
+    <div class="wrapper">
+        <div unselectable="on" class="main error">
+            <table width="100%" height="100%" align="center" style="padding-top: 20px">
+                <tr>
+                    <td height="95%">
+                        <div class="unavailable-image"></div>
+                        <div unselectable="on" style="font-weight: 300; font-size: 45px; color: #ffffff; text-align: center;"> 您的浏览器不受支持。 </div>
+                        <div unselectable="on" style="line-height: 24px; font-weight: 300; font-size: 21px; padding-top: 4px; color: #c3c3c3; text-align: center;"> 若要使用 云上视界融媒云，我们建议您使用最新版本的 Safari、Firefox、Chrome。 </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="copyright">Copyright &copy; 2019 湖北云上视界信息科技有限公司</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.btn {
+    &:hover {
+        .list {
+            display: block;
+        }
+    }
+}
+
+.list {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    display: none;
+    padding: 3px 0 0;
+}
+
+.inline {
+    border: 1px solid #f1f1f1;
+    background: #fff;
+}
+
+.item,
+.item_active {
+    display: block;
+    color: #999;
+    padding: 3px 0;
+    &:hover {
+        color: #3a3a3a;
+        background: #ddd;
+    }
+}
+
+.item_active {
+    color: #000;
+}

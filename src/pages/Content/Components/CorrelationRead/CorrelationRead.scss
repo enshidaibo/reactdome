@@ -1,0 +1,215 @@
+
+
+
+
+.modalContentWrap{
+    background: #fff;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+}
+.modalContentLeft{
+    border-right: 1px solid #d9d9d9;
+    padding: 8px;
+    width: 60%;
+}
+.modalContentRight{
+    width: 40%;
+}
+.modalContentBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.modalFooterWrap{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.modalContentLi{
+    position: relative;
+    color: #666;
+    border-bottom: 1px solid #f8f8f8;
+    &:nth-child(2n+2){
+        background: #e6f7ff;
+    }
+    &:hover{
+        background: #1890ff;
+        color: #fff;
+        transition: all 0.3s ease;
+        .modalContentBtn, .modalCheckBtn{
+            z-index: 100;
+            opacity: 1;
+            color: #1890ff;
+        }
+    }
+}
+.modalContentBtn{
+    position: absolute;
+    right: 15px;
+    height: 20px;
+    top: 7px;
+    line-height: 20px;
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #fff;
+    padding: 0 8px 0 10px;
+    text-align: center;
+    font-size: 12px;
+    &::before{
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid #fff;
+        position: absolute;
+        top: 0;
+        right: -10px;
+    }
+}
+.modalContentTxt{
+    line-height: 34px;
+    padding: 0 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: default;
+}
+.modalCheckList{
+    padding: 8px;
+}
+.modalCheckBtn{
+    position: absolute;
+    right: 5px;
+    height: 20px;
+    top: 7px;
+    line-height: 20px;
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #fff;
+    padding: 0 10px 0 8px;
+    text-align: center;
+    font-size: 12px;
+    &::before{
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #fff;
+        position: absolute;
+        top: 0;
+        left: -10px;
+    }
+}
+.modalCheckTitle{
+    line-height: 20px;
+    color: #1890ff;
+    padding: 10px 8px 6px 8px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.modalFtBtn{
+    margin: 0 15px;
+    display: inline-block;
+    line-height: 26px;
+    border: 1px solid #1890ff;
+    color: #fff;
+    background: #1890ff;
+    padding: 0 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.readWrap{
+    margin-top: 15px;
+}
+.readHead{
+    display: flex;
+    flex-direction: row;
+}
+.readLabel{
+    margin-right: 0.1rem;
+    min-width: 0.7rem;
+    text-align: right;
+    line-height: 0.32rem;
+}
+.readBtn{
+    line-height: 0.31rem;
+    padding: 0 0.15rem;
+    font-size: 0.14rem;
+    border-radius: 0.04rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    background-color: #1890ff;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+.readBody{
+    background: #f1f1f1;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.readLi{
+    border-bottom: 1px solid #d9d9d9;
+    position: relative;
+    padding: 8px 5px;
+    height: 36px;
+    &:last-child{
+        border-bottom: none;
+    }
+    &:hover{
+        .readMoveBtn{
+            opacity: 1;
+            z-index: 100;
+        }
+    }
+}
+.readMoveBtn{
+    position: absolute;
+    left: 5px;
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+    height: 20px;
+    text-align: center;
+    width: 20px;
+    font-size: 12px;
+    top: 8px;
+    line-height: 20px;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.readBadge{
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    font-size: 12px;
+}
+.readTxt{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 20px;
+}
+.modalContentPage{
+    text-align: center;
+}

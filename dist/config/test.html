@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>scheme唤醒</title>
+</head>
+
+<body>
+    <button id="btn">唤醒</button>
+    <script>
+        var btn = document.getElementById("btn")
+        btn.addEventListener('click', function () {
+            console.log(1);
+            // window.location.href = 'https://www.baidu.com/'
+            window.location.href = 'yssj://estv/outLink?params={"url" : "http://www.baidu.com","title" : "百度"}'
+        })
+    </script>
+</body>
+
+</html>

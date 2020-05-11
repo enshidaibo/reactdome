@@ -1,0 +1,48 @@
+.btn,
+.btn_active {
+    position: relative;
+    display: block;
+    float: left;
+    line-height: 28px;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    cursor: pointer;
+
+    :global(.iconfont) {
+        font-size: 18px;
+    }
+}
+
+.btn {
+    color: #999;
+
+    &:hover {
+        color: #3a3a3a;
+    }
+}
+
+.btn_active {
+    color: #000;
+}
+
+.separate {
+    display: block;
+    width: 1px;
+    height: 28px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    text-indent: -99999em;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        content: "";
+        background: #ccc;
+        height: 24px;
+        width: 1px;
+    }
+}

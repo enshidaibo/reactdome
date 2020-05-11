@@ -1,0 +1,32 @@
+.btn {
+    &:hover {
+        .list {
+            display: block;
+        }
+    }
+}
+
+.list {
+    position: absolute;
+    z-index: 99;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    line-height: 32px;
+    padding-top: 8px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: 8px solid #ccc;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+    }
+}
+
+.picker {
+    border: 1px solid transparent;
+}

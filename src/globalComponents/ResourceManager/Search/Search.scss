@@ -1,0 +1,32 @@
+.search {
+    flex: 1;
+    .searchs {
+        width: 560px;
+        height: 44px;
+        line-height: 44px;
+        background: #ececec;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    .ipt {
+        display: block;
+        border: none;
+        width: 100%;
+        padding: 0 110px 0 10px;
+    }
+    .sbtn {
+        width: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: #00a2ed;
+        cursor: pointer;
+        color: #fff;
+        &:hover {
+            background: #0077db;
+        }
+    }
+}

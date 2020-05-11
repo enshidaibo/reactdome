@@ -1,0 +1,12 @@
+.video,
+.videoFocused {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 2px solid transparent;
+    object-fit: fill;
+}
+
+.videoFocused {
+    border: 2px solid blue;
+}

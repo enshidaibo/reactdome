@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <link href="https://at.alicdn.com/t/font_513735_cvhf2lz971.css" rel="stylesheet">
+    <title>云上视界融媒云</title>
+    <link href="./public/css/antd.min.css" rel="stylesheet">
+    <link href="./public/codeMirror/lib/codemirror.css" rel="stylesheet">
+    <link href="./public/codeMirror/theme/night.css" rel="stylesheet">
+    <link href="./public/bower/cropperjs/dist/cropper.min.css" rel="stylesheet">
+</head>
+<style>
+    html {
+        font-size: 100px !important;
+    }
+
+    body {
+        font-size: 0.14rem;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+        background-color: #f8f8f8;
+    }
+
+    ::-webkit-scrollbar {
+        width: 9px;
+        height: 9px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #dddddd;
+        background-clip: padding-box;
+        min-height: 28px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #bbb;
+    }
+</style>
+<script>
+    var bowser = function () {
+        var userAgent = navigator.userAgent.toLowerCase().split(' ');
+        var flag = userAgent.pop().split('/');
+        if (flag[0] !== 'firefox' && flag[0] !== 'safari') {
+            return false;
+        }
+        return true;
+    };
+    if (!bowser()) {
+        window.location.href = '/assets/unsupport.html';
+    }
+</script>
+
+<body>
+    <div id="root"></div>
+    <script src="./public/js/react.production.min.js"></script>
+    <script src="./public/js/react-dom.production.min.js"></script>
+    <script src="./public/js/moment.min.js"></script>
+    <script src="./public/js/antd.min.js"></script>
+    <script src="./public/codeMirror/codemirror.5.41.0.js"></script>
+    <script src="./public/codeMirror/mode/xml/xml.js"></script>
+    <script src="./dist/dll/vendor.dll.11010397.js"></script>
+    <script src="./public/js/echarts.min.js"></script>
+    <script src="./dist/config/moduleConfig.js"></script>
+    <script src="//imgfile.estv.com.cn/common/memoryStorage/memoryStorage.1.0.js"></script>
+    <script src="https://open.web.meitu.com/sources/xiuxiu.js" type="text/javascript"></script>
+    <script>
+        var AppConfig = {
+            baseUrl: 'https://yssjgateway.estv.com.cn/cms/v4/api/',
+            vmsUrl: 'https://yssjgateway.estv.com.cn/vms-proxy/',
+            NavBarMode: 'dark',
+            siteName: "云上视界融媒云",
+            env: "main",
+            asyncCpts: asyncCpts,
+            asyncModules: asyncModules,
+            tzchannelId: 1070
+        }
+    </script>
+    <script src="https://rmy.estv.com.cn/dist/globalApp/20200222/globalApp.js"></script>
+    <script type="text/javascript" src="https://rmy.estv.com.cn/dist/main/20200309/vendors~app-281ae4e2ac1c60fab15b.js"></script>
+    <script type="text/javascript" src="https://rmy.estv.com.cn/dist/main/20200309/app-bcd6229b32708b6f2c53.js"></script>
+</body>
+
+</html>

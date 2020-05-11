@@ -1,0 +1,19 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "typedoc": true,
+        "sw_dev.js": true,
+        "sw_register.js": true,
+        "sw.js": true,
+        "webpack.main.dev.js": true,
+        "webpack.main.prod.js": false,
+        "webpack.app.prod.js": false,
+        ".jsbeautifyrc": true,
+    },
+    "experimentalDecorators": true
+}

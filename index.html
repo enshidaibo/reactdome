@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>扫码登录</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+        box-sizing: border-box;
+    }
+
+    html {
+        background: #fff;
+    }
+
+    .content {
+        margin: 100px 0;
+    }
+
+    .image {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .qr {
+        text-align: center;
+        line-height: 36px;
+    }
+
+    .btn0 {
+        outline: none;
+        display: block;
+        width: 200px;
+        height: 36px;
+        line-height: 34px;
+        text-align: center;
+        margin: 15px auto;
+        border: 1px solid #20af6d;
+        color: #20af6d;
+        font-size: 15px;
+        background: #fff;
+        border-radius: 4px;
+    }
+
+    .btn2 {
+        color: #333;
+        border: 1px solid #f4f4f4;
+    }
+
+    .noapp {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="isapp">
+        <div class="content">
+            <img class="image" src="./applogo.png" alt="">
+            <div class="qr">云上恩施CMS登录确认</div>
+        </div>
+        <button class="btn0 btn1">登录</button>
+        <button class="btn0 btn2">取消登录</button>
+    </div>
+    <div class="noapp">
+        <div class="content">
+            <img class="image" src="./applogo.png" alt="">
+            <div class="qr">请在云上恩施app中打开</div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.bootcss.com/vConsole/3.2.0/vconsole.min.js"></script>
+    <script>
+        window.vConsole = new window.VConsole();
+    </script> -->
+    <script src="https://imgfile.estv.com.cn/ysesapp/public/js/axios.min.js"></script>
+    <script src="https://imgfile.estv.com.cn/ysesapp/public/js/yssjsdk_20190528.js?1"></script>
+    <script>
+        var AppConfig = {
+            baseUrl: 'https://yssjgateway.estv.com.cn/cms/v4/',
+        }
+    </script>
+    <script type="text/javascript" src="https://rmy.estv.com.cn/qscode/qscode-abd13f028ffa6f62b3e6.js"></script>
+</body>
+
+</html>

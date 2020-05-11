@@ -1,0 +1,63 @@
+.images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/** 
+ * 内容
+ **/
+
+.content {
+    background: #fff;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/** 
+ * 搜索等操作
+ **/
+
+.operate {
+    height: 100px;
+    background: #eee;
+    display: flex;
+    padding: 40px 20px 0 0;
+    margin: 0 0 15px;
+}
+
+.action {
+    width: 300px;
+    display: flex;
+    justify-content: space-between; // align-items: center;
+    .btn {
+        height: 44px;
+        line-height: 44px;
+        flex: 1;
+        margin: 0 5px;
+        position: relative;
+    }
+    .btnIpt {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+}
+
+/** 
+ * 内容列表
+ **/
+
+.list {
+    padding: 0 15px;
+}
+
+.Pagination {
+    padding: 15px 15px 25px;
+}

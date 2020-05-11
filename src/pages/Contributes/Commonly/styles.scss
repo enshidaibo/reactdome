@@ -1,0 +1,96 @@
+.fullWrap{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.fullBody{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 4px;
+    margin: 10px 15px 15px;
+    box-shadow: 0 0 4px #ddd;
+    padding: 15px;
+}
+.fullBdNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navInline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    label{
+        white-space: nowrap;
+        padding-right: 6px;
+    }
+}
+.yanjing,
+.bianji,
+.delete,
+.gengduo {
+    text-align: center;
+    line-height: 28px;
+    margin: 0 5px;
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+}
+
+.yanjing {
+    background: #55dcb3;
+}
+
+.bianji {
+    background: #57d7f0;
+}
+
+.delete {
+    background: #fb9183;
+}
+
+.gengduo {
+    background: #55dcb3;
+}
+.formItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px 10px;
+    color: rgba(0,0,0,0.65);
+    margin-bottom: 30px;
+    label{
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+    input{
+        flex: 1 1;
+        border: none;
+        outline: none;
+    }
+}
+.btnGroup{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    button{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

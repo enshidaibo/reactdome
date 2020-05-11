@@ -1,0 +1,43 @@
+.content {
+    flex: 1;
+    padding: 25px;
+    background: #fff;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.title {
+    line-height: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    margin: 0 0 0 5px;
+}
+
+.selected {
+    :global(.ant-table-row) {
+        cursor: default;
+        &:hover {
+            .delete {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.td {
+    position: relative;
+    display: block;
+}
+
+.delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 300ms;
+    color: #f00;
+    cursor: pointer;
+}

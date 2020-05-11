@@ -1,0 +1,45 @@
+.headerBar {
+    padding: 0 0 25px;
+}
+
+.menu {
+    padding: 0;
+    width: 120px;
+    display: inline-block;
+    border-bottom: none;
+    line-height: 32px;
+    float: left;
+    margin: 5px 5px 0 0;
+
+    :global(.ant-menu-submenu) {
+        padding: 0;
+        top: 0;
+        border-bottom: none !important;
+    }
+
+    :global(.ant-menu-submenu-title) {
+        padding: 0;
+        line-height: 32px;
+    }
+}
+
+.btns {
+    margin: 5px 5px 0 0;
+    float: left;
+}
+
+.select {
+    width: 140px;
+    margin: 5px 5px 0 0;
+    float: left;
+}
+
+.form {
+    display: block;
+    float: left;
+    margin: 5px 5px 0 0;
+}
+
+.input {
+    width: 140px !important;
+}

@@ -1,0 +1,65 @@
+.sider {
+    height: 100%;
+    overflow-y: auto;
+    background: rgb(24, 138, 226);
+}
+
+.menu {
+    height: 100%;
+    padding: 15px 0 0;
+    background: rgb(24, 138, 226);
+    color: #fff;
+    border-right: 1px solid rgb(24, 138, 226);
+
+    :global(.iconfont) {
+        transition: font-size 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    &:global(.ant-menu-inline-collapsed) {
+        width: 50px;
+
+        :global(.ant-menu-item),
+        :global(.ant-menu-submenu-title) {
+            padding: 0 0 !important;
+            text-align: center;
+        }
+
+        :global(.anticon),
+        :global(.iconfont) {
+            font-size: 22px;
+            margin: 0;
+        }
+    }
+
+    :global(.ant-menu-item),
+    :global(.ant-menu-submenu-title) {
+        color: #fff;
+
+        &>a {
+            color: #fff;
+        }
+
+        &:after {
+            border-right: none;
+        }
+
+        &:hover {
+            background: rgba(19, 110, 181, 1);
+        }
+    }
+
+    :global(.ant-menu) {
+        background: rgb(24, 138, 226);
+    }
+
+    :global(.ant-menu-item-selected) {
+        background: rgba(19, 110, 181, 1) !important;
+    }
+}
+
+.iconfont {
+    margin: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}

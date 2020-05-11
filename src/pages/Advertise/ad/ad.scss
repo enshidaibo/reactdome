@@ -1,0 +1,79 @@
+.hd{
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f2f2f2;
+    justify-content: space-between;
+}
+.iconWrap{
+    align-items: center;
+}
+.pxForm{
+    border: 1px dotted #e2e2e2;
+    border-radius: 4px;
+    padding: 10px;
+}
+.left{
+    border-right: 1px dotted #e2e2e2;
+    padding-right: 10px;
+}
+.right{
+    padding-left: 10px;
+    width: 220px;
+    max-height: 400px;
+    overflow: auto;
+}
+.input{
+    width: 320px;
+}
+.dateWrap{
+    margin: 10px 0;
+    border: 1px solid #e2e2e2;
+    width: 600px;
+    padding: 10px;
+    border-radius: 4px;
+    .dateRow{
+        align-items: center;
+    }
+    .dateLabel{
+        margin-right: 15px;
+        width: 120px;
+        text-align: center;
+    }
+}
+.tableWrap{
+    width: 600px;
+}
+.btnWrap{
+    margin: 20px 0;
+    width: 600px;
+}
+.btn{
+    width: 140px;
+}
+.pageWrap{
+    margin: 10px 0;
+    justify-content: flex-end;
+}
+.h3{
+    border-bottom: 1px solid #e2e2e2;
+    span{
+        position: relative;
+        display: inline-block;
+        line-height: 24px;
+        padding-bottom: 4px;
+        &::after{
+            border-bottom: 3px solid #40a9ff;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            content: "";
+        }
+    }
+}
+.ul{
+    .li{
+        border-bottom: 1px solid #e2e2e2;
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,31 @@
+.UrlItem {
+    width: 100%;
+    position: relative;
+    background: #fff;
+    display: flex;
+    border: 15px solid #f2f2f2;
+    line-height: 50px;
+    padding: 0 15px;
+    font-size: 16px;
+    margin: 20px 0 20px;
+}
+
+.icon {
+    padding: 0 0 0 0;
+}
+
+.icon2 {
+    transform: rotate(-135deg);
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+        color: #40a9ff;
+    }
+}
+
+.ipt {
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 0 15px;
+}

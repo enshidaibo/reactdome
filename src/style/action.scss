@@ -1,0 +1,35 @@
+.action {
+    display: flex;
+    justify-content: center;
+}
+
+.yanjing,
+.bianji,
+.delete,
+.gengduo {
+    text-align: center;
+    line-height: 28px;
+    margin: 0 5px;
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.yanjing {
+    background: #55dcb3;
+}
+
+.bianji {
+    background: #57d7f0;
+}
+
+.delete {
+    background: #fb9183;
+}
+
+.gengduo {
+    background: #55dcb3;
+}

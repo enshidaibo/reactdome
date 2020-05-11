@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <link href="https://at.alicdn.com/t/font_513735_ijmrj2wgo.css" rel="stylesheet">
+    <title>云上视界融媒云</title>
+    <link href="./public/css/antd.min.css" rel="stylesheet">
+    <link href="./public/codeMirror/lib/codemirror.css" rel="stylesheet">
+    <link href="./public/codeMirror/theme/night.css" rel="stylesheet">
+    <link href="./public/bower/cropperjs/dist/cropper.min.css" rel="stylesheet">
+</head>
+<style>
+    html {
+        font-size: 100px !important;
+    }
+
+    body {
+        font-size: 0.14rem;
+        font-family: "Microsoft YaHei";
+    }
+
+    .clear {
+        clear: both;
+    }
+</style>
+
+<body>
+    <div id="root"></div>
+    <script src="./public/js/react.development.js"></script>
+    <script src="./public/js/react-dom.development.js"></script>
+    <script src="./public/js/moment.min.js"></script>
+    <script src="./public/js/antd.min.js"></script>
+    <script src="./public/codeMirror/codemirror.5.41.0.js"></script>
+    <script src="./public/codeMirror/mode/xml/xml.js"></script>
+    <script src="./public/js/system.min.js"></script>
+    <script src="./dist/dll/vendor.dll.11010397.js"></script>
+
+    <script src="./dist/config/moduleConfig.js"></script>
+    <script>
+        var AppConfig = {
+            vmsUrl: 'https://yssjgateway.estv.com.cn/vms-proxy/',
+            baseUrl: 'https://yssjgateway.estv.com.cn/cms/v4/api/', //正式网关
+            // baseUrl: 'https://yssjgatewaycs.estv.com.cn/cmsv3/cms/v4/api/', //测试网关
+            // qscodeUrl: "https://yssjcms.estv.com.cn/qscode/test/qscode.html",
+            // cmsId: "cmsAdmin",
+            // cmsPassword: "yssj@2019",
+            NavBarMode: 'dark',
+            siteName: "云上视界融媒云",
+            asyncCpts: asyncCpts,
+        }
+
+        function loadScript(url) {
+            return System.import(url)
+                .then(res => {
+                    console.log(res)
+                    return res
+                })
+                .catch(err => {
+                    return {
+                        error: true,
+                        errorMsg: err.message
+                    }
+                })
+        }
+        // loadScript('./dist/globalCpt/SlateEditer/20190531/index-c72e93253df307781638.js')
+        console.log(window)
+    </script>
+    <script src="./dist/globalApp/20190731/globalApp.js"></script>
+    <!-- <script type="text/javascript" src="https://yssjcms.estv.com.cn/dist/main/dist20190527/vendors~app-8a5a414893b3c069cbce.js"></script>
+    <script type="text/javascript" src="https://yssjcms.estv.com.cn/dist/main/dist20190527/app-4c8489e2b94fdde8660d.js"></script> -->
+    <!-- <script type="text/javascript" src="http://<%= htmlWebpackPlugin.options.host %>:3119/app.main.js"></script> -->
+</body>
+
+</html>

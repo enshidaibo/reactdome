@@ -1,0 +1,68 @@
+.header {
+    padding: 0 25px;
+    background: #fff;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.logos {
+    width: 195px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    margin: 0 0 2px 25px;
+}
+
+.menufold {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.userInfo {
+    display: inline-block;
+}
+
+.userAvatar {
+    width: 32px;
+    height: 32px;
+    margin: 0 6px 0 0;
+}
+
+.userName {
+    color: #000;
+}
+
+.topmenu {
+    line-height: 56px;
+    border-bottom: none;
+
+    :global(.ant-menu-item) {
+        padding: 0;
+        margin-left: 25px;
+    }
+
+    :global(.iconfont) {
+        font-size: 20px;
+    }
+}
+
+.webs {
+    font-size: 16px;
+    color: #409eff;
+}
+
+.webToggle {
+    cursor: pointer;
+
+    &:hover {
+        color: #409eff;
+    }
+}

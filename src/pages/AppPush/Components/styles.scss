@@ -1,0 +1,37 @@
+.push {
+    padding: 25px;
+    background: #fff;
+}
+
+.textare {
+    border: 10px solid #e8e8e8;
+}
+
+.lk {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+}
+
+.lkl {
+    width: 60px;
+    min-width: 60px;
+}
+
+.lkt {
+    color: #000; // flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.lkd {
+    background: #ddd;
+    margin: 0 5px;
+    font-size: 13px;
+}
+
+.lkr {
+    color: #fff;
+    font-size: 13px;
+}

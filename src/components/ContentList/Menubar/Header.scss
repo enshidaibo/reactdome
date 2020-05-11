@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+
+    &:hover {
+        .acts {
+            opacity: 1;
+        }
+    }
+}
+
+.name {
+    flex: 1;
+    color: #666;
+    max-width: 156px;
+    overflow: hidden;
+
+    &:hover {
+        color: #1890ff;
+    }
+}
+
+.acts {
+    text-align: right;
+    opacity: 0;
+    transition: opacity 300ms;
+    min-width: 90px;
+    width: 90px;
+}
+
+.icon {
+    margin: 0 4px !important;
+    font-size: 16px;
+    color: #666;
+
+    &:hover {
+        color: #1890ff;
+    }
+}
+
+.active {
+    flex: 1;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editInput {
+    flex: 1;
+    margin-right: 4px;
+}

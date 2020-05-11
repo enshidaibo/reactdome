@@ -1,0 +1,35 @@
+.siteName{
+  color: chocolate;
+}
+.hide{
+  display: none;
+}
+.action {
+  display: flex;
+  justify-content: center;
+}
+.yanjing,
+.zhuanzai,
+.yinyong{
+  text-align: center;
+  line-height: 28px;
+  margin: 0 5px;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.yanjing {
+  background: #55dcb3;
+}
+
+.zhuanzai {
+  background: #57d7f0;
+}
+
+.yinyong {
+  background: #fb9183;
+}

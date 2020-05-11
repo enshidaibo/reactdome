@@ -1,0 +1,14 @@
+{
+    "success": true,
+    "code": 200,
+    "body": {
+        "1": {
+            "version": "1.3.8",
+            "data": "1"
+        },
+        "35": {
+            "version": "2.0.5",
+            "data": "1"
+        }
+    }
+}
